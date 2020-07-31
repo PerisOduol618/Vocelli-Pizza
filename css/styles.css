@@ -35,7 +35,7 @@ nav > ul > li > a:hover {
 }
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/Images/pizza3.jpeg) center/ cover no-repeat fixed;
+    url(/Images/image6.jpeg) center/ cover no-repeat fixed;
   height: 60vh;
   background-repeat: no-repeat;
 }
