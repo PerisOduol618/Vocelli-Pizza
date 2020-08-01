@@ -15,7 +15,7 @@
 
 <body>
     <div class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg">
             <img src="/Images/pizza4.jpeg" class="logo" alt="logo">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+
                     <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about">About us</a>
                     <a class="nav-item nav-link" href="#contact">Contact us</a>
-                    <a class="nav-item nav-link disabled" href="#order"><a href="#order"><button type="button" class="btn btn-danger order">Order</button></a></a>
+                    <a class="nav-item nav-link disabled" href="#order"><a href="#order"><button type="button"
+                                class="btn btn-danger order">Order</button></a></a>
                 </div>
             </div>
         </nav>
@@ -39,7 +41,7 @@
             </ul>
         </nav> -->
         <div id="home">
-            <h1>VOCELLI PIZZA</h1>
+            <h1 class="text-white">VOCELLI PIZZA</h1>
         </div>
         <br><br>
         <div id="about" class="container">
@@ -83,36 +85,106 @@
             </div>
         </div>
         <br><br>
+        <div id="order" class="container card">
+            <br>
+            <p>Choose the pizza size</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
+                        data-toggle="dropdown">select</button>
+                    <div class="dropdown-menu">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </div>
+                </div>
+                <input type="text" class="form-control" id="size">
+            </div>
+
+            <p>Choose pizza crust</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
+                        data-toggle="dropdown">select</button>
+                    <div class="dropdown-menu">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </div>
+                </div>
+                <input type="text" class="form-control" id="crust">
+            </div>
+
+            <p>Choose pizza topping(s)</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
+                        data-toggle="dropdown">Select</button>
+                    <div class="dropdown-menu">
+                        <option value="source">Source</option>
+                        <option value="mashroom">Mashroom</option>
+                        <option value="meat">meat</option>
+                        <option value="medium">vegetables</option>
+                        <option value="large">Cheese</option>
+                    </div>
+                </div>
+                <input type="text" class="form-control" id="top">
+            </div>
+
+            <p>Number of pizza</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                </div>
+                <select class="browser-default custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            <!-- <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
+                        data-toggle="dropdown">select</button>
+                    <div class="dropdown-menu">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div> -->
+        </div>
+        <br><br>
 
         <div id="contact">
-        </div>
-        <footer class="page-footer font-small mdb-color darken-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 py-4">
-                        <div class="mb-5 flex-center">
-                            <a href="https://www.facebook.com/" target="_blank"><i
-                                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                            <a href="https://twitter.com/?lang=en" target="_blank"><i
-                                    class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                            <a href="https://myaccount.google.com/profile" target="_blank"><i
-                                    class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                            <a href="https://ke.linkedin.com/" target="_blank"><i
-                                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                            <a href="https://www.instagram.com/" target="_blank"><i
-                                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+            <footer class="page-footer font-small mdb-color darken-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 py-4">
+                            <div class="mb-5 flex-center">
+                                <a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                                <a href="https://twitter.com/?lang=en" target="_blank"><i
+                                        class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                                <a href="https://myaccount.google.com/profile" target="_blank"><i
+                                        class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                                <a href="https://ke.linkedin.com/" target="_blank"><i
+                                        class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
 
-
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-            <div class="footer-copyright text-center unique-color-dark py-3">© 2020 Copyright:
-                <a href="https://github.com/PerisOduol618" target="_blank"> Oduol Peris</a>
-            </div>
-        </footer>
-    </div>
+                <div class="footer-copyright text-center unique-color-dark py-3">© 2020 Copyright:
+                    <a href="https://github.com/PerisOduol618" target="_blank"> Oduol Peris</a>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
