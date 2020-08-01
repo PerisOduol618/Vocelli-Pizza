@@ -50,3 +50,6 @@ nav > ul > li > a:hover {
 .card-deck{
     text-align: center;
 }
+.input-group-prepend{
+  cursor: pointer;
+}
