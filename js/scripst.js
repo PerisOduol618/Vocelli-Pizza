@@ -18,11 +18,11 @@ Pizza.prototype.ordered = function () {
     );
 };
 
-// function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings) {
-//     this.priceOfSize = priceOfSize;
-//     this.priceOfCrust = priceOfCrust;
-//     this.priceOfToppings = priceOfToppings;
-// }
+function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings) {
+    this.priceOfSize = priceOfSize;
+    this.priceOfCrust = priceOfCrust;
+    this.priceOfToppings = priceOfToppings;
+}
 
 // PriceCalculate.prototype.totalCost = function () {
 //     return (
