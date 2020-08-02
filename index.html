@@ -14,173 +14,143 @@
 </head>
 
 <body>
-    <div class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg">
-            <img src="/Images/pizza4.jpeg" class="logo" alt="logo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
 
-                    <a class="nav-item nav-link active" href="#home"><span class="text-white">Home</span><span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#about">About us</a>
-                    <a class="nav-item nav-link" href="#contact">Contact us</a>
-                    <a class="nav-item nav-link disabled" href="#order"><a href="#order"><button type="button"
-                                class="btn btn-danger order">Order</button></a></a>
-                </div>
-            </div>
-        </nav>
-        <!-- <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact"> Contact us</a></li>
-                <li><a href="#order"><button type="button" class="btn btn-danger order">Order</button></a></li>
-            </ul>
-        </nav> -->
-        <div id="home">
-            <h1 class="text-white">VOCELLI PIZZA</h1>
-        </div>
-        <br><br>
-        <div id="about" class="container">
-            <div class="card-deck">
-                <div class="card mb-4">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="/Images/pizza1.jpeg" alt="Pizza">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Margherita Pizza</h4>
-                        <p class="card-text">This Neopaltian-style pizza has thin crust, fresh tomato sauce, fresh
-                            mozzarella cheese, and just a few leaves of basil. </p>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="/Images/pizza2.jpeg" alt="Pizza">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Meat Pizza</h4>
-                        <p class="card-text">It holds the most toppings on a single pie: pepperoni, sausage, meatballs,
-                            and mushrooms all come together in this super-savory pizza.</p>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="/Images/pizza5.jpeg" alt="Pizza">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Pepperoni Pizza</h4>
-                        <p class="card-text">The salty and slightly spicy taste holds its own against waves of melty,
-                            gooey cheese and gets ever-so-slightly crisped in the hot oven </p>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <img src="/Images/pizza4.jpeg" class="logo" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#home"><span class="text-white">Home</span><span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about"><span class="text-white">About us</span></a>
+                <a class="nav-item nav-link" href="#contact"><span class="text-white">Contact us</span></a>
+                <a class="nav-item nav-link disabled" href="#order"><a href="#order"><button type="button"
+                            class="btn btn-danger order">Order</button></a></a>
             </div>
         </div>
-        <br><br>
-        <div id="order" class="container card">
-            <br>
-            <p>Choose the pizza size</p>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
-                        data-toggle="dropdown">select</button>
-                    <div class="dropdown-menu">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="size">
-            </div>
-
-            <p>Choose pizza crust</p>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
-                        data-toggle="dropdown">select</button>
-                    <div class="dropdown-menu">
-                        <option value="Bagels">Bagels</option>
-                        <option value="Sicilian">Sicilian</option>
-                        <option value="large">Neapolitan</option>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="crust">
-            </div>
-
-            <p>Choose pizza topping(s)</p>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
-                        data-toggle="dropdown">Select</button>
-                    <div class="dropdown-menu">
-                        <option value="source">Source</option>
-                        <option value="mashroom">Mashroom</option>
-                        <option value="meat">meat</option>
-                        <option value="medium">vegetables</option>
-                        <option value="large">Cheese</option>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="top">
-            </div>
-
-            <p>Number of pizza</p>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                </div>
-                <select class="browser-default custom-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <!-- <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <button class="btn btn-dark btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
-                        data-toggle="dropdown">select</button>
-                    <div class="dropdown-menu">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </div>
-                </div>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-            </div> -->
-        </div>
-        <br><br>
-
-        <div id="contact">
-            <footer class="page-footer font-small mdb-color darken-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 py-4">
-                            <div class="mb-5 flex-center">
-                                <a href="https://www.facebook.com/" target="_blank"><i
-                                        class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                                <a href="https://twitter.com/?lang=en" target="_blank"><i
-                                        class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                                <a href="https://myaccount.google.com/profile" target="_blank"><i
-                                        class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                                <a href="https://ke.linkedin.com/" target="_blank"><i
-                                        class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-                                <a href="https://www.instagram.com/" target="_blank"><i
-                                        class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="footer-copyright text-center unique-color-dark py-3">© 2020 Copyright:
-                    <a href="https://github.com/PerisOduol618" target="_blank"> Oduol Peris</a>
-                </div>
-            </footer>
+    </nav>
+    <div id="home">
+        <div class="h1">
+            <h1 class="text-white">VOCELLI</h1>
+            <h1 class="text-white">PIZZA</h1>
         </div>
     </div>
+    <br><br>
+    <div id="about" class="container">
+        <div class="card-deck">
+            <div class="card mb-4">
+                <div class="view overlay">
+                    <img class="card-img-top" src="/Images/pizza1.jpeg" alt="Pizza">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Margherita Pizza</h4>
+                    <p class="card-text">This Neopaltian-style pizza has thin crust, fresh tomato sauce, fresh
+                        mozzarella cheese, and just a few leaves of basil. </p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="view overlay">
+                    <img class="card-img-top" src="/Images/pizza2.jpeg" alt="Pizza">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Meat Pizza</h4>
+                    <p class="card-text">It holds the most toppings on a single pie: pepperoni, sausage, meatballs,
+                        and mushrooms all come together in this super-savory pizza.</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="view overlay">
+                    <img class="card-img-top" src="/Images/pizza5.jpeg" alt="Pizza">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Pepperoni Pizza</h4>
+                    <p class="card-text">The salty and slightly spicy taste holds its own against waves of melty,
+                        gooey cheese and gets ever-so-slightly crisped in the hot oven. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id="order" class="container card">
+        <br>
+        <div id="size">
+            <label for="">Choose the Pizza size&#x1f60B;</label>
+            <select required class="form-control" id="pizza_size">
+                <option>choose size</option>
+                <option value="crispy">small</option>
+                <option value="stuffed">medium</option>
+                <option value="gluten">large</option>
+            </select>
+        </div>
+
+        <br>
+        <div id="size">
+            <label for="">Choose Pizza Crust&#x1f60B;</label>
+            <select required class="form-control" id="pizza_crust">
+                <option>choose crust</option>
+                <option value="bagels">Bagels</option>
+                <option value="sicilian">Sicilian</option>
+                <option value="neapolitan">Neapolitan</option>
+            </select>
+        </div><br>
+
+        <div id="top">
+            <label for="">Choose Pizza topping(s)&#x1f60B;</label>
+            <select required class="form-control" id="pizza-topb">
+                <option>Choose topping(s)...</option>
+                <option value="mashroom">Mashroom</option>
+                <option value="meat">meat</option>
+                <option value="cheese">Cheese</option>
+            </select>
+        </div><br>
+        <p>Number of pizza</p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text bg-dark text-white" for="inputGroupSelect01">Options</label>
+            </div>
+            <select class="browser-default custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <a href="#" class="btn btn-primary">order</a>
+        </div>
+    </div>
+    <br><br>
+    <div id="contact">
+        <footer class="page-footer font-small mdb-color darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 py-4">
+                        <div class="mb-5 flex-center">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                            <a href="https://twitter.com/?lang=en" target="_blank"><i
+                                    class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                            <a href="https://myaccount.google.com/profile" target="_blank"><i
+                                    class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                            <a href="https://ke.linkedin.com/" target="_blank"><i
+                                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-copyright text-center unique-color-dark py-3">© 2020 Copyright:
+                <a href="https://github.com/PerisOduol618" target="_blank"> Oduol Peris</a>
+            </div>
+        </footer>
+    </div>
+
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
