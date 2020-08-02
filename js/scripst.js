@@ -5,18 +5,18 @@ function Pizza(size, crust, toppings, total) {
     this.total = total;
 }
 
-// Pizza.prototype.ordered = function () {
-//     return (
-//         "Your order is summary is " +
-//         this.size +
-//         " " +
-//         this.crust +
-//         " " +
-//         this.toppings +
-//         " pizza"
+Pizza.prototype.ordered = function () {
+    return (
+        "Your order is summary is " +
+        this.size +
+        " " +
+        this.crust +
+        " " +
+        this.toppings +
+        " pizza"
 
-//     );
-// };
+    );
+};
 
 // function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings) {
 //     this.priceOfSize = priceOfSize;
