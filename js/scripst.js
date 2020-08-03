@@ -24,12 +24,12 @@ function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings) {
     this.priceOfToppings = priceOfToppings;
 }
 
-// PriceCalculate.prototype.totalCost = function () {
-//     return (
-//         "Your total order "
-//             (this.priceOfSize + this.priceOfCrust + this.PriceOfToppings)
-//     );
-// };
+PriceCalculate.prototype.totalCost = function () {
+    return (
+        "Your total order "
+            (this.priceOfSize + this.priceOfCrust + this.PriceOfToppings)
+    );
+};
 
 // $(document).ready(function () {
 //     $("button#submit").click(function () {
