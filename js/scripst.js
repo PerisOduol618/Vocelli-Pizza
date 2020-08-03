@@ -35,41 +35,41 @@ $(document).ready(function () {
     $("button#submit").click(function () {
         event.preventDefault.prototype();
 
-//         let pSize = $("#size option:selected").val();
-//         let pCrust = $("#crust option:selected").val();
-//         let pToppings = $("#top option:selected").val();
+        let pSize = $("#size option:selected").val();
+        let pCrust = $("#crust option:selected").val();
+        let pToppings = $("#top option:selected").val();
 
-//         switch (pSize) {
-//             case "0":
-//                 s_price = 0;
-//                 break;
-//             case "small":
-//                 s_price = 500;
-//                 break;
-//             case "medium":
-//                 s_price = 1000;
-//                 break;
-//             case "large":
-//                 s_price = 1500;
-//                 break;
-//             default:
-//                 console.log("Error")
-//         }
-//         switch (pCrust) {
-//             case "0":
-//                 t_price = 0;
-//                 break;
-//             case "Bagels":
-//                 t_price = 2000;
-//                 break;
-//             case "Sicilian":
-//                 t_price = 250;
-//                 break;
-//             case "Neapolitan":
-//                 t_price = 300;
-//                 break;
+        switch (pSize) {
+            case "0":
+                s_price = 0;
+                break;
+            case "small":
+                s_price = 500;
+                break;
+            case "medium":
+                s_price = 1000;
+                break;
+            case "large":
+                s_price = 1500;
+                break;
+            default:
+                console.log("Error")
+        }
+        switch (pCrust) {
+            case "0":
+                t_price = 0;
+                break;
+            case "Bagels":
+                t_price = 2000;
+                break;
+            case "Sicilian":
+                t_price = 250;
+                break;
+            case "Neapolitan":
+                t_price = 300;
+                break;
 
-//         }
-//     })
+        }
+    })
 
-// });
+});
