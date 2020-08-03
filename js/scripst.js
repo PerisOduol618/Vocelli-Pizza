@@ -31,9 +31,9 @@ PriceCalculate.prototype.totalCost = function () {
     );
 };
 
-// $(document).ready(function () {
-//     $("button#submit").click(function () {
-//         event.preventDefault.prototype();
+$(document).ready(function () {
+    $("button#submit").click(function () {
+        event.preventDefault.prototype();
 
 //         let pSize = $("#size option:selected").val();
 //         let pCrust = $("#crust option:selected").val();
