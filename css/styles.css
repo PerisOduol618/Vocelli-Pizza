@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 body {
   overflow-x: hidden;
@@ -29,23 +30,7 @@ nav > ul > li {
   display: inline-block;
 }
 
-nav > ul > li > a {
-  padding: 14px;
-  margin-right: 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  background-color: none;
-  border-radius: 15px;
-  color: rgba(248, 245, 245, 0.733);
-  font-size: 1.2rem;
-}
 
-nav > ul > li > a:hover {
-  box-shadow: 0 0 7px red;
-  text-decoration: none;
-  color: white;
-}
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/Images/image6.jpeg) center/ cover no-repeat fixed;
@@ -62,12 +47,24 @@ h1 {
 .card-deck {
   text-align: center;
 }
-.bt{
-  float: right;
-}
 #size, #crust, #top{
   cursor: pointer;
 }
-#order{
+.card{
   background-color: transparent;
+}
+#pizza_size,#pizza_crust,#pizza_top,.pizza_number{
+  font-family: 'Caveat', cursive;
+}
+.font{
+  font-size: 30px;
+}
+option{
+  font-size: 20px;
+}
+#delivery{
+  display:none;
+}
+#checkout{
+  display:none;
 }

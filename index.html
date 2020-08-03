@@ -77,22 +77,22 @@
     <div id="order" class="container card">
         <br>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div id="pizza_size">
-                    <label for="">Choose the Pizza size&#x1f60B;</label>
-                    <select required class="form-control" id="pizza_size" required>
-                        <option>choose size...</option>
-                        <option value="crispy">small --- Ksh.500</option>
-                        <option value="stuffed">medium --- Ksh.1000</option>
-                        <option value="gluten">large --- Ksh.1500</option>
+                    <label for="" class="font">Choose the Pizza size&#x1f60B;</label>
+                    <select required class="form-control" id="size" required>
+                        <option value="0">choose size...</option>
+                        <option value="small">small --- Ksh.500</option>
+                        <option value="medium">medium --- Ksh.1000</option>
+                        <option value="large">large --- Ksh.1500</option>
                     </select>
                 </div>
 
                 <br>
                 <div id="pizza_crust">
-                    <label for="">Choose Pizza Crust&#x1f60B;</label>
+                    <label for="" class="font">Choose Pizza Crust&#x1f60B;</label>
                     <select required class="form-control" id="crust">
-                        <option>choose crust...</option>
+                        <option value="0">choose crust...</option>
                         <option value="bagels">Bagels --- Ksh.200</option>
                         <option value="sicilian">Sicilian --- Ksh.250</option>
                         <option value="neapolitan">Neapolitan --- Ksh.300</option>
@@ -100,9 +100,9 @@
                 </div><br>
 
                 <div id="pizza_top">
-                    <label for="">Choose Pizza topping(s)&#x1f60B;</label>
-                    <select required class="form-control" id="pizza-top">
-                        <option>Choose topping(s)...</option>
+                    <label for="" class="font">Choose Pizza topping&#x1f60B;</label>
+                    <select required class="form-control" id="top">
+                        <option value="0">Choose topping...</option>
                         <option value="mashroom">Mashroom --- Ksh.100</option>
                         <option value="meat">meat --- Ksh.250</option>
                         <option value="cheese">Cheese --- Ksh.150</option>
@@ -111,10 +111,10 @@
                     </select>
                 </div><br>
                 <div class="pizza_number">
-                    <label for="number">Number of pizza you want&#x1f60B;</label>
+                    <label for="number" class="font">Number of pizza you want&#x1f60B;</label>
                     <input type="number" class="form-control" id="number" min="1" placeholder="Number of pizza..."
                         required>
-                </div>
+                </div><br>
 
                 <div class="input-group mb-3">
                     <button type="submit" id="submit" class="btn btn-danger">Order Now!</button>

@@ -34,12 +34,14 @@ function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings, numberOfPizz
 PriceCalculate.prototype.totalCost = function () {
     return (
         "Your total order "
-            ((this.priceOfSize + this.priceOfCrust + this.PriceOfToppings) * this.numberOfPizza)
+            // ((this.priceOfSize + this.priceOfCrust + this.PriceOfToppings) * this.numberOfPizza)
+            (this.priceOfSize + this.priceOfCrust + this.PriceOfToppings)
     );
 };
 
 $(document).ready(function () {
     $("button#submit").click(function (event) {
+        // console.log('Hurray!!!!!!!!!')
         event.preventDefault();
 
         let pSize = $("#size option:selected").val();
@@ -103,20 +105,22 @@ $(document).ready(function () {
             default:
                 console.log("Error!")
         }
+
         total = s_price + c_price + t_price;
+        console.log(total)
 
         $(".list").append(
             "<h4>Your Oder Summary is:</h4><br>" +
-            "<li>Size:" +
-            pSize +
+            "<li>Size: " +
+            pSize + " " + "(" + "Ksh." + s_price + ")" +
             "<li>" +
-            "<li>Crust:" +
-            pCrust +
+            "<li>Crust: " +
+            pCrust + " " + "(" + "Ksh." + c_price + ")" +
             "<li>" +
-            "<li>Topping(s):" +
-            pToppings +
-            "<li>"<br> +
-            "<h5>Your total cost is:</h5>"
+            "<li>Topping: " +
+            pToppings + " " + "(" + "Ksh." + t_price + ")" +
+            "<li><br>" +
+            "<h5>Your total cost is: </h5>"+ "Ksh." + total
 
         )
         $("#delivery").toggle();
