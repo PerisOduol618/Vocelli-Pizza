@@ -53,7 +53,7 @@ h1 {
 .card{
   background-color: transparent;
 }
-#pizza_size,#pizza_crust,#pizza_top,.pizza_number{
+#pizza_size,#pizza_crust,#pizza_top, #pizza_top2, .pizza_number{
   font-family: 'Caveat', cursive;
 }
 .font{

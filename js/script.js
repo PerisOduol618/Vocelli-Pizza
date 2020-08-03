@@ -1,12 +1,13 @@
 var deliveryCost = 200;
 
-function Pizza(size, crust, toppings, number, total) {
+function Pizza(size, crust, toppings, topping2, number, total) {
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.total = total;
+    this.topping2 =topping2 
     this.number = number
-
+    this.total = total;
+    
 }
 
 Pizza.prototype.ordered = function () {
@@ -18,16 +19,19 @@ Pizza.prototype.ordered = function () {
         " " +
         this.toppings +
         " " +
+        this.topping2 +
+        " " +
         this.number +
         " pizza"
 
     );
 };
 
-function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings, numberOfPizza) {
+function PriceCalculate(priceOfSize, priceOfCrust, priceOfToppings, priceOfToppings2, numberOfPizza) {
     this.priceOfSize = priceOfSize;
     this.priceOfCrust = priceOfCrust;
     this.priceOfToppings = priceOfToppings;
+    this.priceOfToppings2 = priceOfToppings2
     this.numberOfPizza = numberOfPizza
 }
 
@@ -35,7 +39,7 @@ PriceCalculate.prototype.totalCost = function () {
     return (
         "Your total order "
             // ((this.priceOfSize + this.priceOfCrust + this.PriceOfToppings) * this.numberOfPizza)
-            (this.priceOfSize + this.priceOfCrust + this.PriceOfToppings)
+            ((this.priceOfSize + this.priceOfCrust + this.PriceOfToppings + priceOfToppings2) * this.numberOfPizza)
     );
 };
 
@@ -47,6 +51,7 @@ $(document).ready(function () {
         let pSize = $("#size option:selected").val();
         let pCrust = $("#crust option:selected").val();
         let pToppings = $("#top option:selected").val();
+        let pToppings2 = $("#top2 option:selected").val();
         let pNumber = $("#number option:selected").val();
 
         switch (pSize) {
@@ -106,8 +111,26 @@ $(document).ready(function () {
                 console.log("Error!")
         }
 
-        total = s_price + c_price + t_price;
+        switch (pToppings2) {
+            case "0":
+                t2_price = 0;
+                break;
+            case "olives":
+                t2_price =50;
+                break;
+            case "sausage":
+                t2_price = 100;
+                break;
+            case "Peppers":
+                t2_price = 40;
+                break;
+            default:
+                console.log("Error!")
+        }
+
+        total = s_price + c_price + t_price + t2_price;
         console.log(total)
+        console.log(t2_price)
 
         $(".list").append(
             "<h4>Your Oder Summary is:</h4><br>" +
@@ -119,7 +142,11 @@ $(document).ready(function () {
             "<li>" +
             "<li>Topping: " +
             pToppings + " " + "(" + "Ksh." + t_price + ")" +
+            "<li>" +
+            "<li>Topping 2: " +
+            pToppings2 + " " + "(" + "Ksh." + t2_price + ")" +
             "<li><br>" +
+
             "<h5>Your total cost is: </h5>"+ "Ksh." + total
 
         )
