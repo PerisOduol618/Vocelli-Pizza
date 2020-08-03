@@ -4,8 +4,7 @@
 
  This is the link to my [live site]( https://perisoduol618.github.io/Vocelli-Pizza/)
 
- When you work with us,you are part of a team of commited collaborators.All aspects of our software development process are intergrated,interactive and agile.
- Our approach unfiles design, development and product management to create exceptional products
+The homemade pizza dough is produced in-house daily and is another reason why the pizza at Pizza Inn always tastes better. The Twisty Bread, the signature Wingz and the delicious Double Meal are additional value-for-money options that keep our satisfied customers coming back time after time. These are the meals that have made our Terrific Tuesday everyone’s favorite day of the week. When entertaining, a Hawaiian pizza, a Regina pizza, or a Peri Peri Chicken pizza from Pizza Inn is the obvious and perfect option to please crowds of all ages.  
 ## Setup/Installation Requirements
 * Under the repository name, click Clone or download.
 * In the Clone with HTTPs section, click  to copy the clone URL for the repository.
