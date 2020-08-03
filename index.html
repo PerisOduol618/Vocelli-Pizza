@@ -28,7 +28,7 @@
                 <a class="nav-item nav-link" href="#about"><span class="text-white">About us</span></a>
                 <a class="nav-item nav-link" href="#contact"><span class="text-white">Contact us</span></a>
                 <a class="nav-item nav-link disabled" href="#order"><a href="#order"><button type="button"
-                            class="btn btn-danger order">Order</button></a></a>
+                            class="btn btn-danger order bt">Order</button></a></a>
             </div>
         </div>
     </nav>
@@ -76,53 +76,64 @@
     <br><br>
     <div id="order" class="container card">
         <br>
-        <div id="size">
-            <label for="">Choose the Pizza size&#x1f60B;</label>
-            <select required class="form-control" id="pizza_size">
-                <option>choose size</option>
-                <option value="crispy">small</option>
-                <option value="stuffed">medium</option>
-                <option value="gluten">large</option>
-            </select>
-        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="pizza_size">
+                    <label for="">Choose the Pizza size&#x1f60B;</label>
+                    <select required class="form-control" id="pizza_size" required>
+                        <option>choose size...</option>
+                        <option value="crispy">small --- Ksh.500</option>
+                        <option value="stuffed">medium --- Ksh.1000</option>
+                        <option value="gluten">large --- Ksh.1500</option>
+                    </select>
+                </div>
 
-        <br>
-        <div id="size">
-            <label for="">Choose Pizza Crust&#x1f60B;</label>
-            <select required class="form-control" id="pizza_crust">
-                <option>choose crust</option>
-                <option value="bagels">Bagels</option>
-                <option value="sicilian">Sicilian</option>
-                <option value="neapolitan">Neapolitan</option>
-            </select>
-        </div><br>
+                <br>
+                <div id="pizza_crust">
+                    <label for="">Choose Pizza Crust&#x1f60B;</label>
+                    <select required class="form-control" id="crust">
+                        <option>choose crust...</option>
+                        <option value="bagels">Bagels --- Ksh.200</option>
+                        <option value="sicilian">Sicilian --- Ksh.250</option>
+                        <option value="neapolitan">Neapolitan --- Ksh.300</option>
+                    </select>
+                </div><br>
 
-        <div id="top">
-            <label for="">Choose Pizza topping(s)&#x1f60B;</label>
-            <select required class="form-control" id="pizza-topb">
-                <option>Choose topping(s)...</option>
-                <option value="mashroom">Mashroom</option>
-                <option value="meat">meat</option>
-                <option value="cheese">Cheese</option>
-            </select>
-        </div><br>
-        <p>Number of pizza</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <label class="input-group-text bg-dark text-white" for="inputGroupSelect01">Options</label>
+                <div id="pizza_top">
+                    <label for="">Choose Pizza topping(s)&#x1f60B;</label>
+                    <select required class="form-control" id="pizza-top">
+                        <option>Choose topping(s)...</option>
+                        <option value="mashroom">Mashroom --- Ksh.100</option>
+                        <option value="meat">meat --- Ksh.250</option>
+                        <option value="cheese">Cheese --- Ksh.150</option>
+                        <option value="cream">Cream --- Ksh.80</option>
+                        <option value="chicken">Chicken --- Ksh.400</option>
+                    </select>
+                </div><br>
+                <div class="pizza_number">
+                    <label for="number">Number of pizza you want&#x1f60B;</label>
+                    <input type="number" class="form-control" id="number" min="1" placeholder="Number of pizza..."
+                        required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <button type="submit" id="submit" class="btn btn-danger">Order Now!</button>
+                </div>
             </div>
-            <select class="browser-default custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </div>
-        <div class="input-group mb-3">
-            <a href="#" class="btn btn-primary">order</a>
+            <div class="col-md-6">
+                <ul class="list">
+
+                </ul>
+                <div>
+                    <button type="btn" id="delivery" class="btn btn-dark">Delivery</button>
+                    <button type="dtn" id="checkout" class="btn btn-dark">CheckOut</button>
+
+                </div>
+            </div>
         </div>
     </div>
     <br><br>
+
     <div id="contact">
         <footer class="page-footer font-small mdb-color darken-3">
             <div class="container">
@@ -150,7 +161,6 @@
             </div>
         </footer>
     </div>
-
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -160,6 +170,6 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+<script src="js/script.js"></script>
 
 </html>

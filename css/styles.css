@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
 body {
   overflow-x: hidden;
 }
@@ -8,6 +10,9 @@ body {
   border-radius: 50%;
   display: inline-block;
   line-height: 50px;
+}
+.navbar-nav {
+  text-emphasis-color: white;
 }
 
 nav {
@@ -44,12 +49,25 @@ nav > ul > li > a:hover {
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/Images/image6.jpeg) center/ cover no-repeat fixed;
-  height: 60vh;
+  height: 80vh;
   background-repeat: no-repeat;
+  font-family: "Aclonica", sans-serif;
 }
-.card-deck{
-    text-align: center;
+.h1 {
+  padding: 14%;
 }
-.input-group-prepend{
+h1 {
+  font-size: 130%;
+}
+.card-deck {
+  text-align: center;
+}
+.bt{
+  float: right;
+}
+#size, #crust, #top{
   cursor: pointer;
+}
+#order{
+  background-color: transparent;
 }
